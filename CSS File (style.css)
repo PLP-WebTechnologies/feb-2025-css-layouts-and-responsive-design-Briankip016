@@ -1,0 +1,112 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: #eaeaea;
+}
+
+.grid-item {
+    background-color: #ddd;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+/* Flexbox Layout */
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.flex-item {
+    background-color: #ddd;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    flex: 1;
+    margin: 0 10px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .flex-item {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hero {
+        padding: 20px;
+    }
+}
